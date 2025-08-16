@@ -9,17 +9,17 @@ interface IProps {
 }
 
 const Header: React.FC<IProps> = (props) => {
-  const { logoSrc, clubName, backgroundImage } = props;
+  const { logoSrc, clubName } = props;
   return (
-    <div className='w-full'>
+    <div className='w-full max-w-5xl'>
       <div
-        className='w-full max-w-4xl min-h-[220] md:min-h-[420] bg-cover bg-center bg-no-repeat relative'
+        className='w-full max-w-5xl min-h-[220] md:min-h-[420] bg-cover bg-center bg-no-repeat relative'
         style={{
           backgroundImage:
             "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(/images/club-bg-image.jpeg)",
         }}
       >
-        <header className='w-full flex flex-row justify-between items-center z-10 px-4 py-4 '>
+        <header className='w-full flex flex-row justify-between items-center z-10 px-4 py-6 md:py-4 '>
           <div className='w-full flex flex-row justify-self-start items-center  bg-transparent gap-2'>
             <div className='bg-white w-12 h-12  md:w-16 md:h-16 rounded-xl flex flex-col justify-center items-center '>
               <Image
@@ -30,7 +30,7 @@ const Header: React.FC<IProps> = (props) => {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <p className='text-white text-md md:text-lg font-vazir font-medium'>
+            <p className='text-white text-md md:text-lg font-irsans font-medium'>
               {clubName}
             </p>
           </div>
