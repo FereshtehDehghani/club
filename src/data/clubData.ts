@@ -25,7 +25,7 @@ export const clubData = {
           description: "پکیج فیتنس آقایان - ویژه کاهش وزن",
           startTime: " 7",
           endTime: "23",
-          discountPercentage: 20,
+          discountPercentage: 0,
           price: 20000000,
           image:
             "https://gavaznkafsh.com/wp-content/uploads/2024/06/setaresobh-boushehr-400x293.jpg",
@@ -75,7 +75,7 @@ export const clubData = {
           description: "پکیج فیتنس آقایان - ویژه کاهش وزن",
           startTime: " 7",
           endTime: "23",
-          discountPercentage: 20,
+          discountPercentage: 0,
           price: 20000000,
           image:
             "https://gavaznkafsh.com/wp-content/uploads/2024/06/setaresobh-boushehr-400x293.jpg",
@@ -112,7 +112,7 @@ export const clubData = {
           description: "پکیج فیتنس آقایان - ویژه کاهش وزن",
           startTime: " 7",
           endTime: "23",
-          discountPercentage: 20,
+          discountPercentage: 0,
           price: 20000000,
           image:
             "https://gavaznkafsh.com/wp-content/uploads/2024/06/setaresobh-boushehr-400x293.jpg",
@@ -156,7 +156,7 @@ export const clubData = {
           description: "پکیج فیتنس آقایان - ویژه کاهش وزن",
           startTime: " 7",
           endTime: "23",
-          discountPercentage: 20,
+          discountPercentage: 0,
           price: 20000000,
           image:
             "https://gavaznkafsh.com/wp-content/uploads/2024/06/setaresobh-boushehr-400x293.jpg",
@@ -213,7 +213,7 @@ export const clubData = {
           description: "پکیج فیتنس آقایان - ویژه کاهش وزن",
           startTime: " 7",
           endTime: "23",
-          discountPercentage: 20,
+          discountPercentage: 0,
           price: 20000000,
           image:
             "https://gavaznkafsh.com/wp-content/uploads/2024/06/setaresobh-boushehr-400x293.jpg",

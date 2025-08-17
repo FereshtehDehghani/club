@@ -18,16 +18,14 @@ const Tabs = (props: IProps) => {
 
   return (
     <div className='w-full' dir='rtl'>
-      <div className='relative border-b border-gray-200 px-2'>
+      <div className='relative border-b border-gray-200'>
         <nav className='flex flex-row justify-between -mb-px overflow-x-auto'>
-          {tabs.map((tab) => (
+          {tabs.map((tab, index) => (
             <button
               key={tab.id}
               onClick={() => onChangeTab(tab)}
-              className={`relative mr-2 py-4 px-1 text-center font-medium text-xs md:text-sm whitespace-nowrap ${
-                activeTab.id === tab.id
-                  ? "text-[#cd7f32]"
-                  : "text-gray-500 hover:text-gray-700"
+              className={`relative py-1  font-medium  text-xs md:text-sm whitespace-nowrap text-typography-primary hover:text-gray-900 ${
+                index === 0 ? "pr-0" : "text-center"
               }`}
             >
               {tab.title}
@@ -51,7 +49,6 @@ const Tabs = (props: IProps) => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -10 }}
             transition={{ duration: 0.3 }}
-            className='py-3 px-2'
           >
             {activeTab.content}
           </motion.div>

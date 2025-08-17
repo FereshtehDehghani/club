@@ -16,7 +16,7 @@ const Header: React.FC<IProps> = (props) => {
         className='w-full max-w-5xl min-h-[220] md:min-h-[420] bg-cover bg-center bg-no-repeat relative'
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(/images/club-bg-image.jpeg)",
+            "linear-gradient(rgba(25,39,53,1), rgba(25,39,53,.7)), url(/images/club-bg-image.jpeg)",
         }}
       >
         <header className='w-full flex flex-row justify-between items-center z-10 px-4 py-6 md:py-4 '>
@@ -30,12 +30,12 @@ const Header: React.FC<IProps> = (props) => {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <p className='text-white text-md md:text-lg font-irsans font-medium'>
+            <p className='text-white text-sm md:text-lg font-irsans font-medium'>
               {clubName}
             </p>
           </div>
           <button type='button'>
-            <Icon icon='fluent:chat-16-filled' width='32' height='32' />
+            <Icon icon='mingcute:chat-1-fill' width='28' height='28' color="#fff" />
           </button>
         </header>
       </div>

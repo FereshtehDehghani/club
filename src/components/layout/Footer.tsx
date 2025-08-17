@@ -16,7 +16,7 @@ const MenuBar = () => {
   return (
     <div className='w-full max-w-5xl fixed bottom-4  left-1/2 transform -translate-x-1/2 z-50 px-4'>
       <motion.div
-        className='w-full flex  justify-between items-center gap-2 py-3 px-2 rounded-xl bg-[#1c2b3a] shadow-lg'
+        className='w-full flex  justify-between items-center gap-2 py-4 px-8 rounded-lg bg-[#1c2b3a]'
         style={{ borderRadius: "12px" }}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ const MenuBar = () => {
           <motion.button
             key={menu.name}
             onClick={() => setActiveMenu(menu.name)}
-            className={`relative rounded-lg flex items-center justify-center`}
+            className={`relative rounded-lg flex items-center justify-center font-extralight`}
             style={{ borderRadius: "12px" }}
             whileHover={{
               scale: 1.1,
@@ -37,9 +37,10 @@ const MenuBar = () => {
           >
             <Icon
               icon={menu.icon}
-              width={24}
-              height={24}
-              className={`${activeMenu === menu.name ? "text-white" : "text-neutral-300"}`}
+              width={20}
+              height={20}
+              className={"text-white"}
+              
             />
             {activeMenu === menu.name && (
               <motion.span
